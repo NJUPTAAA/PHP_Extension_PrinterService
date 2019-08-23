@@ -10,7 +10,7 @@ Php::Value print_file(Php::Parameters &parameters)
     std::string printFile = parameters[0];
     const char* printFileTmp = printFile.c_str();
 
-    cupsPrintFile(cupsGetDefault(), printFileTmp, "PHP Print", 0, NULL);
+    cupsPrintFile(cupsGetDefault(), printFileTmp, "PHP Printer", 0, NULL);
 
     return 1;
 }
